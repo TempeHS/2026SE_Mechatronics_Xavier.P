@@ -19,7 +19,7 @@ from servo import Servo
 
 
 # create a PWM servo controller (16 - pin Pico)
-servo_pwm = PWM(Pin(16))
+servo_pwm = PWM(Pin(18))
 
 # Set the parameters of the servo pulses, more details in the "Documentation" section
 freq = 50
