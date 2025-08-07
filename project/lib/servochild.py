@@ -4,10 +4,9 @@ from time import sleep
 class ServoChild:
     # need to integrate v03 code part
     # probably scrap this for pid controller
-    def __init__(self, lwheel, rwheel, debug):
+    def __init__(self, lwheel, rwheel):
         self.__lwheel = lwheel
         self.__rwheel = rwheel
-        self.__debug = debug
     def forward_slow(self):
         self.__lwheel.set_duty(1600)
         self.__rwheel.set_duty(1400)
