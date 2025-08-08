@@ -29,6 +29,11 @@ for val in range(WIDTH+1):
     display.show()
 sleep_ms(500)
 
+# PBM
+display.load_pbm("test.pbm", 1)
+display.show()
+sleep_ms(5000)
+
 
 # Plots
 graphSin = display.graph2D()

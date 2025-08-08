@@ -8,30 +8,30 @@ class ServoChild:
         self.__lwheel = lwheel
         self.__rwheel = rwheel
     def forward_slow(self):
-        self.__lwheel.set_duty(1600)
-        self.__rwheel.set_duty(1400)
+        self.__lwheel.set_duty(1662)
+        self.__rwheel.set_duty(1300)
     def forward_medium(self):
-        self.__lwheel.set_duty(2000)
-        self.__rwheel.set_duty(1000)
+        self.__lwheel.set_duty(1812)
+        self.__rwheel.set_duty(1150)
     def forward_fast(self):
-        self.__lwheel.set_duty(2500)
-        self.__rwheel.set_duty(500)
+        self.__lwheel.set_duty(1962)
+        self.__rwheel.set_duty(1000)
     def back_slow(self):
-        self.__lwheel.set_duty(1400)
-        self.__rwheel.set_duty(1600)
+        self.__lwheel.set_duty(1338)
+        self.__rwheel.set_duty(1700)
     def back_medium(self):
-        self.__lwheel.set_duty(1000)
-        self.__rwheel.set_duty(2000)
+        self.__lwheel.set_duty(1188)
+        self.__rwheel.set_duty(1850)
     def back_fast(self):
-        self.__lwheel.set_duty(500)
-        self.__rwheel.set_duty(2500)
+        self.__lwheel.set_duty(1038)
+        self.__rwheel.set_duty(2000)
     def stop(self):
         self.__lwheel.set_duty(1500)
         self.__rwheel.set_duty(1500)
     def left(self):
-        self.__lwheel.set_duty(1000)
+        self.__lwheel.set_duty(1038)
         self.__rwheel.set_duty(1000)
     def right(self):
-        self.__lwheel.set_duty(2000)
+        self.__lwheel.set_duty(1962)
         self.__rwheel.set_duty(2000)
     
