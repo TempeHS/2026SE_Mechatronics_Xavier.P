@@ -29,9 +29,9 @@ class ServoChild:
         self.__lwheel.set_duty(1500)
         self.__rwheel.set_duty(1500)
     def left(self):
-        self.__lwheel.set_duty(1038)
-        self.__rwheel.set_duty(1000)
+        self.__lwheel.set_duty(1238)
+        self.__rwheel.set_duty(1200)
     def right(self):
-        self.__lwheel.set_duty(1962)
-        self.__rwheel.set_duty(2000)
+        self.__lwheel.set_duty(1762)
+        self.__rwheel.set_duty(1800)
     

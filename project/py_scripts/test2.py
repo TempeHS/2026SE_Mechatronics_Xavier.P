@@ -12,6 +12,9 @@ right_wheel = Servo(pwm=rwheel_pwm)
 twowheel = ServoChild(left_wheel, right_wheel)
 
 while True:
-    twowheel.forward_medium()
+    twowheel.right()
+    sleep(0.9)
+    twowheel.stop()
+    sleep(4)
 
 

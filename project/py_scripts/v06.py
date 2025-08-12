@@ -19,4 +19,4 @@ while True:
     display.show()
     print(range_a.distance_mm, range_b.distance_mm)
 
-    sleep_ms(100)
+    sleep_ms(50)
