@@ -19,9 +19,9 @@ class Subsystem:
             self.__display.show()
             sleep_ms(1500)
             self.__display.fill(0)
-            self.__display.show(0)
+            self.__display.show()
             label = "none"
-        elif distance_front >= 100:
+        if distance_front >= 100:
             self.__wheels.forward_fast()
         else:
             if distance_side < 100:
