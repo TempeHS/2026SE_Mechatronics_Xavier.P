@@ -1,5 +1,5 @@
 from PiicoDev_Ultrasonic import PiicoDev_Ultrasonic
-from subsystem import Subsystem
+from controller import Controller
 from servochild import ServoChild
 from servo import Servo
 from time import sleep_ms
@@ -23,8 +23,8 @@ range_b = PiicoDev_Ultrasonic(id=[0, 0, 0, 1])
 display = create_PiicoDev_SSD1306()
 
 
-robot = Subsystem(wheels, sensor, range_a, range_b, display)
+robot = Controller(wheels, sensor, range_a, range_b, display)
 
 while True: 
-    robot.controller()
+    robot.update()
     sleep_ms(50)
