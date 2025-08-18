@@ -14,11 +14,19 @@ class Controller:
     def back_state(self):
         self.__wheels.back_fast()
     def left_state(self):
+        self.__wheels.stop()
+        sleep_ms(50)
         self.__wheels.left()
         sleep_ms(900)
+        self.__wheels.stop()
+        sleep_ms(50)
     def right_state(self):
+        self.__wheels.stop()
+        sleep_ms(50)
         self.__wheels.right()
         sleep_ms(900)
+        self.__wheels.stop()
+        sleep_ms(50)
     def found_green_state(self):
         self.__wheels.stop()
         self.__display.fill(0)
