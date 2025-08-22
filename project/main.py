@@ -7,7 +7,7 @@ from machine import Pin
 file_name = "finaltest"
 
 # Add the path to the sys.path
-sys.path.append("/py_scripts")
+sys.path.append("/py_scripts/tests")
 
 # Create a stop pin to stop the main loop
 stop_pin = Pin(4, Pin.IN, Pin.PULL_UP)
